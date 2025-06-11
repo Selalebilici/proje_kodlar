@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Satış Sil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 40px;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="satis_sil.php" method="POST">
+        <h2>Satış Sil</h2>
+
+        <label for="satis_id">Satış ID:</label>
+        <input type="text" name="satis_id" required>
+
+        <button type="submit">Satışı Sil</button>
+    </form>
+
+</body>
+</html>

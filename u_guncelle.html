@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ürün Güncelle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            padding: 40px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(30, 30, 30);
+        }
+    </style>
+</head>
+<body>
+
+<form action="u_guncelle.php" method="POST">
+    <h2>Ürün Güncelle</h2>
+
+    <label>Ürün ID:</label>
+    <input type="text" name="urun_id" required>
+
+    <label>Ürün Adı:</label>
+    <input type="text" name="urun_ad" required>
+
+    <label>Kategori:</label>
+    <input type="text" name="urun_kategori" required>
+
+    <label>Marka:</label>
+    <input type="text" name="urun_marka" required>
+
+    <label>Fiyat (₺):</label>
+    <input type="number" name="urun_fiyat" step="0.01" required>
+
+    <label>Stok Miktarı:</label>
+    <input type="number" name="urun_stok" step="1" required>
+
+    <button type="submit">Güncelle</button>
+</form>
+
+</body>
+</html>

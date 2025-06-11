@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ödeme Sil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            padding: 40px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+<form action="o_sil.php" method="POST">
+    <h2>Ödeme Sil</h2>
+
+    <label>Ödeme ID:</label>
+    <input type="text" name="odeme_id" required>
+
+    <button type="submit">Sil</button>
+</form>
+
+</body>
+</html>

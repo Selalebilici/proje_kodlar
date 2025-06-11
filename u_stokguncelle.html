@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ürün Stok Güncelle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 50px;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="u_stokguncelle.php" method="POST">
+        <h2>Ürün Stok Güncelle</h2>
+
+        <label for="urun_id">Ürün ID:</label>
+        <input type="text" id="urun_id" name="urun_id" required>
+
+        <label for="stok">Yeni Stok Miktarı:</label>
+        <input type="number" id="urun_stok" name="stok" step="0.01" required>
+
+        <button type="submit">Güncelle</button>
+    </form>
+
+</body>
+</html>

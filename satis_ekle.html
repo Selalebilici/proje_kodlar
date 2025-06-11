@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Satış Ekle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 40px;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: rgb(0, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="satis_ekle.php" method="POST">
+        <h2>Satış Ekle</h2>
+
+        <label for="satis_id">Satış ID:</label>
+        <input type="text" name="satis_id" required>
+
+        <label for="musteri_id">Müşteri ID:</label>
+        <input type="text" name="musteri_id" required>
+
+        <label for="urun_id">Ürün ID:</label>
+        <input type="text" name="urun_id" required>
+
+        <label for="satis_fiyat">Satış Fiyatı:</label>
+        <input type="number" step="0.01" name="satis_fiyat" required>
+
+        <label for="satis_tarih">Satış Tarihi:</label>
+        <input type="datetime-local" name="satis_tarih" required>
+
+        <button type="submit">Satışı Kaydet</button>
+    </form>
+
+</body>
+</html>
